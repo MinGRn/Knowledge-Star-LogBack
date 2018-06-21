@@ -16,12 +16,12 @@
 ----
 
 * [第三章：Configuration配置]
-    * [Configuration](doc/chapter-3/Configuration.md)
+    * [配置标签介绍](doc/chapter-3/配置标签介绍.md)
 
 ----
 
 * [第四章：Appenders组件]
-    * [Appenders](doc/chapter-4/Appenders.md)
+    * [Appenders组件标签介绍](doc/chapter-4/Appenders组件标签介绍.md)
 
 ----
 
