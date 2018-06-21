@@ -1,6 +1,6 @@
 # Knowledge-Star-LogBack
 
-LogBack 日志框架介绍，该仓库是本 gitbook，详细阅读链接：mingrn.gitbooks.io
+LogBack 日志框架介绍，该仓库是本 gitbook，详细阅读链接：<a>mingrn.gitbooks.io</a>
 
 参考资料：
 
