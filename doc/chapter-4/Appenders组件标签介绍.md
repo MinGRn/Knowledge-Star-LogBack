@@ -2,8 +2,8 @@
 
 `appender` configuration 的子元素。它其实也是一种 `logger` ，不过它是一个负责写日志的组件。该组件强制使用两个 属性值 ：`name` 和 `class`。
 
->  - `name` ：appender 的名称，该值主要用于 `<appender-ref>` 的 `ref`。
->  - `class`：定义appender 的权限定名或叫组件！
+- `name` ：appender 的名称，该值主要用于 `<appender-ref>` 的 `ref`。
+- `class`：定义appender 的权限定名或叫组件！
 
 
 # appender 组键说明
@@ -12,8 +12,8 @@
 appender 的组键主要指的是 appender 标签 class 引用的包类
  组件分为另种，一种是记录本地，一种是记录到远程。
 
->  - 本地 如：`ConsoleAppender`、`FileAppender`...
->  - 远程 如：`SocketAppender `、`SSLSocketAppender`
+- 本地 如：`ConsoleAppender`、`FileAppender`...
+- 远程 如：`SocketAppender `、`SSLSocketAppender`
 
 ## `ConsoleAppender`主键
 
@@ -314,7 +314,7 @@ SizeBasedTriggeringPolicy 触发策略只接受一个属性 `maxFileSize`，默�
 SocketAppender 包类 `ch.qos.logback.classic.net.SocketAppender`
 SSLSocketAppender  包类 `ch.qos.logback.classic.net.SSLSocketAppender`
 
-> **下方译文仅供参考，详细清阅读官网说明**
+**下方译文仅供参考，详细清阅读官网说明**
 
 > SocketAppender  和 SSLSocketAppender  权限定名主要适用于远程。前面讲的权限定名主要是将日志记录在当前服务器本地机器中。而 SocketAppender 和 SSLSocketAppender  权限定名则能完美的将日志写入远程机器中。
 
