@@ -8,15 +8,15 @@ Regular Filter 继承 [Filter](https://logback.qos.ch/xref/ch/qos/logback/core/f
 
 Regular filters 被组织成一个有序列表，并且基于三元逻辑。每个过滤器的 `decide(ILoggingEvent event)` 方法依次被调用。这个方法返回一个FilterReply枚举值：
 
-> - `DENY` 拒绝
-> - `NEUTRAL` 中立
-> - `ACCEPT` 接受
+- `DENY` 拒绝
+- `NEUTRAL` 中立
+- `ACCEPT` 接受
 
->如果  `decide()` 返回的值是 `DENY`，那么日志事件就会立即删除，而不需要咨询其余的过滤器。
+1）如果  `decide()` 返回的值是 `DENY`，那么日志事件就会立即删除，而不需要咨询其余的过滤器。
 
->如果返回的值是 `NEUTRAL`，那么将咨询列表中的下一个过滤器。如果没有进一步的过滤器进行协商，那么日志事件通常会被处理。
+2）如果返回的值是 `NEUTRAL`，那么将咨询列表中的下一个过滤器。如果没有进一步的过滤器进行协商，那么日志事件通常会被处理。
 
->如果返回的值是 `ACCEPT`，那么日志事件将跳过剩余的过滤器。
+3）如果返回的值是 `ACCEPT`，那么日志事件将跳过剩余的过滤器。
 
 **Regular Filter** 一般用于 `<appender>` 组件中。通过向appender添加一个或多个过滤器，您可以通过任意的标准来过滤事件，比如日志消息的内容、MDC的内容、每天的时间或日志事件的任何其他部分。
 
