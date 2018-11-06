@@ -11,12 +11,12 @@ Spring-Boot 作为微服务应用，默认集成 `logback` 日志框架。
 
  从上图可以看到，日志输出内容元素如下
 
->  - 时间日期 ：精确到毫秒
->  - 日志级别 ：ERROR, WARN, INFO, DEBUG or TRACE
->  - 进程ID
->  - 分隔符 ：`---` 标识实际日志的开始
->  - 线程名 ：方括号括起来（可能会截断控制台输出
->  - Logger名 ：通常使用源代码的类名
+  - 时间日期 ：精确到毫秒
+  - 日志级别 ：ERROR, WARN, INFO, DEBUG or TRACE
+  - 进程ID
+  - 分隔符 ：`---` 标识实际日志的开始
+  - 线程名 ：方括号括起来（可能会截断控制台输出
+  - Logger名 ：通常使用源代码的类名
 
 *正如官网所说*：
 Assuming the configuration files logback-test.xml or logback.xml are not present, logback will default to invoking BasicConfigurator which will set up a minimal configuration. This minimal configuration consists of a ConsoleAppender attached to the root logger. The output is formatted using a PatternLayoutEncoder set to the pattern %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n. Moreover, by default the root logger is assigned the DEBUG level.
