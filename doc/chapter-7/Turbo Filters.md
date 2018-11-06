@@ -8,9 +8,9 @@ TurboFilter对象都扩展了 TurboFilter 抽象类。像常规过滤器一样�
 
 总的来说，它们的工作方式与前面提到的过滤器非常相似。然而，过滤器和涡轮过滤器之间有两个主要的区别。
 
-> - TurboFilter对象与日志上下文绑定在一起。因此，他们不仅仅会被 `appender`使用时 调用，而且每次的日志请求也是会被调用。它们的范围比应用程序附加的过滤器更宽。
+- TurboFilter对象与日志上下文绑定在一起。因此，他们不仅仅会被 `appender`使用时 调用，而且每次的日志请求也是会被调用。它们的范围比应用程序附加的过滤器更宽。
 
-> -  更重要的是，它们在LoggingEvent对象创建之前被调用。TurboFilter对象不要求日志事件的实例化来过滤日志请求。因此，即使在事件创建之前，涡轮过滤器也适用于对测井事件进行高性能过滤。
+-  更重要的是，它们在LoggingEvent对象创建之前被调用。TurboFilter对象不要求日志事件的实例化来过滤日志请求。因此，即使在事件创建之前，涡轮过滤器也适用于对测井事件进行高性能过滤。
 
 ## Implementing your own TurboFilter
 
@@ -97,8 +97,8 @@ public class SampleTurboFilter extends TurboFilter {
 
 另外 TurboFilter 还有几个过滤器可供使用。
 
-> - MDCFilter 检查MDC中给定值的存在，而 DynamicThresholdFilter  允许基于MDC键/级阈值关联的过滤。
-> - 另一方面，MarkerFilter会检查与日志请求相关联的特定标记的存在。
+- MDCFilter 检查MDC中给定值的存在，而 DynamicThresholdFilter  允许基于MDC键/级阈值关联的过滤。
+- 另一方面，MarkerFilter会检查与日志请求相关联的特定标记的存在。
 
 看下面这个栗子：
 
